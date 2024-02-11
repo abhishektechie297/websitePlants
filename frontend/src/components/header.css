@@ -1,0 +1,53 @@
+.App-header {
+    background-color: #104716;
+    min-height: 5rem;
+    display: flex; /* Use flexbox for horizontal layout */
+    align-items: center;
+    justify-content: space-between; /* Distribute elements left and right */
+    font-size: calc(10px + 2vmin);
+    color: white; /* Set all text to white */
+    padding: 1rem 2rem;
+    
+  }
+  
+  .App-header .nav {
+    display: flex; /* Make the nav items flex items */
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove any default margins */
+  }
+  
+  .App-header .upwan,
+  .App-header .sections li a,
+  .App-header .btn,
+  .App-header .nav-link {
+    color: white; /* Set specific elements to white */
+  }
+  
+  .App-header .sections {
+    display: flex; /* Make the sections items flex items */
+    gap: 1rem; /* Add equal spacing between sections */
+    padding-left: 15rem;
+    
+  }
+  
+  /* Additional styling for other elements (optional) */
+  .App-header .dropdown-menu {
+    color:  black;
+  }
+  
+  .App-header form {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    height: 2rem;
+    margin-top: 0.8rem;
+  }
+  
+  .dropdown-menu li:first-child a {
+    color: black; /* Targets the first child of the dropdown menu, which is "Indoor Plants" */
+  }
+  
+  .dropdown-menu li:not(:first-child) a {
+    color: inherit; /* Keeps the default color for other dropdown items */
+  }
+  
+  

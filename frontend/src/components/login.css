@@ -1,0 +1,75 @@
+.form {
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    position: absolute;
+    top: 55%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    backdrop-filter: blur(5px);
+    }
+    
+    .form h2 {
+      width: 220px;
+      font-family: sans-serif;
+      text-align: center;
+      color: black;
+      font-size: 22px;
+      background-color: #fff;
+      border-radius: 10px;
+      margin: 2px;
+      padding: 8px;
+    }
+    
+    .form input {
+      width: 240px;
+      height: 35px;
+      background: transparent;
+      border-bottom: 1px solid rgb(255, 252, 252);
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      color: #fff;
+      font-size: 15px;
+      letter-spacing: 1px;
+      margin-top: 30px;
+      font-family: sans-serif;
+      
+    }
+    
+    .form input:focus {
+      outline: none;
+    }
+    
+    input::placeholder {
+      color: #1a0c0c;
+      font-family:fantasy;
+      
+    }
+    
+    .login-container {
+        display: flex;
+        background-image: url('https://en-media.thebetterindia.com/uploads/2019/09/Untitled-design-2019-09-12T180751.398.jpg');
+        height: 50rem; /* Cover the entire viewport height */
+        background-size: cover; /* Scale image to cover container, maintaining aspect ratio */
+        background-repeat: no-repeat; /* Prevent image repetition */
+        background-position: center; /* Center the image horizontally and vertically */
+      
+      }
+
+      .btnn  {
+        color:white; /* Set button text color to green */
+        background-color: green;
+        width: 10rem; /* Set button width to 3rem */
+        border-radius: 0.5rem; /* Slightly round corners */
+
+      }
+     
