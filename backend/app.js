@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const cors = require('cors')
 const cookieParser = require('cookie-parser')
 const products = require('./routes/product')
 const auth = require('./routes/auth')
@@ -7,6 +8,15 @@ const order = require('./routes/order')
 const payment = require('./routes/payment')
 const cart = require('./routes/cart')
 const path = require('path')
+
+app.use(cors(
+    {
+        origin: ["https://deploy-mern-1whq.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
+
 
 const errorMiddleWare = require('./middlewares/error');
 const dotenv = require('dotenv');

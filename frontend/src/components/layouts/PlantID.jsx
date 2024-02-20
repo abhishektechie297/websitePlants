@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'; 
 
 import FileBase64 from 'react-file-base64';
-// import axios from 'axios';
-// import './PlantId.css'
+
 
 const PlantId = () =>{
     const [plantFile, setPlantFile] = useState(null);
@@ -35,12 +34,7 @@ const PlantId = () =>{
         .then(response => response.json())
         .then(responseData => {
             setPlantData(responseData)
-            // axios.post('/api/plants', {
-            //     plantName: responseData.suggestions[0].plant_name,
-            //     plantUrl: responseData.suggestions[0].plant_details.url
-            //   })
-                // .then(response => console.log(response.data))
-                // .catch(error => console.error(error));
+          
             });
         };
             // console.log('Success:', responseData);
