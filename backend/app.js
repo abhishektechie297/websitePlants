@@ -9,13 +9,13 @@ const payment = require('./routes/payment')
 const cart = require('./routes/cart')
 const path = require('path')
 
-app.use(cors(
-    {
-        origin: ["https://deploy-mern-1whq.vercel.app"],
-        methods: ["POST", "GET"],
-        credentials: true
-    }
-));
+// app.use(cors(
+//     {
+//         origin: ["https://deploy-mern-1whq.vercel.app"],
+//         methods: ["POST", "GET"],
+//         credentials: true
+//     }
+// ));
 
 
 const errorMiddleWare = require('./middlewares/error');
